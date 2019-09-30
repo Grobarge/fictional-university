@@ -12,6 +12,8 @@
                     <li>Practice 2</li>
                     <li> Practice Jerry</li>
                     <li>Practice Bobby</li>
+                    <li> Practice Mickey</li>
+                    <li>Practice Billy</li>
                 </ul>
             
             </div>

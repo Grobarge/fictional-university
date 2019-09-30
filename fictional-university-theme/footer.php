@@ -1,4 +1,4 @@
-<h2>This is our footer php </h2>
+<h2>Footer PHP  </h2>
 
 <?php wp_footer(); ?>
 

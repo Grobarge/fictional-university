@@ -1,7 +1,7 @@
 <?php
 
 // wp_enqueue_script('custom name for script', function('javascript file'), does this script have any dependancys?, 'version of code' set true if want to load after header for better preformance);
-// microtiume() - this will disable cashing for the specific file, used in development to speed up processes and have things force reload when we refresh page. 
+// microtime() - this will disable cashing for the specific file, used in development to speed up processes and have things force reload when we refresh page. 
 
 
 function university_files()

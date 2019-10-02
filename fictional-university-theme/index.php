@@ -51,7 +51,7 @@
                 </a>
                 <div class="event-summary__content">
                     <h5 class="event-summary__title headline headline--tiny"><a href="#">We Were Voted Best School</a></h5>
-                    <p>For the 100th year in a row we are voted #1. <a href="#" class="nu gray">Read more</a></p>
+                    <p>For the 100th year in a row we are voted #1, Its because were a tech school and don't give out art <a href="#" class="nu gray">Read more</a></p>
                 </div>
             </div>
             <div class="event-summary">
@@ -61,7 +61,7 @@
                 </a>
                 <div class="event-summary__content">
                     <h5 class="event-summary__title headline headline--tiny"><a href="#">Professors in the National Spotlight</a></h5>
-                    <p>Two of our professors have been in national news lately. <a href="#" class="nu gray">Read more</a></p>
+                    <p>Did you know Jerry Garcia was a mf boss?!?!? <a href="#" class="nu gray">Read more</a></p>
                 </div>
             </div>
 

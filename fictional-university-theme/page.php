@@ -19,9 +19,7 @@ while (have_posts()) {
     <div class="container container--narrow page-section">
 
 
-        <!-- this chunck of code below affects the breadcrumb on the pages and dynamicly switches the text on the breadcrumb based off of the page its on -->
         <?php
-            // if the id of the post is a child to the parent id then display the title of parent page on breadcrumb if its parent page, dont display bredcrumb //
             $theParentVariable = wp_get_post_parent_id(get_the_ID());
             if ($theParentVariable) { ?>
             <div class="metabox metabox--position-up metabox--with-home-link">
@@ -31,15 +29,31 @@ while (have_posts()) {
             }
             ?>
 
+        <?php
+            $testArray = get_pages(array(
+                'child_of' => get_the_ID()
+            ));
 
-        <!-- <div class="page-links">
-            <h2 class="page-links__title"><a href="#">About Us</a></h2>
-            <ul class="min-list">
-                <li class="current_page_item"><a href="#">Our History</a></li>
-                <li><a href="#">Our Goals</a></li>
-            </ul>
-        </div> -->
+            if ($theParentVariable or $testArray) { ?>
+            <div class="page-links">
+                <h2 class="page-links__title"><a href="<?php echo get_permalink($theParentVariable); ?> "><?php echo get_the_title($theParentVariable); ?></a></h2>
+                <ul class="min-list">
+                    <?php
 
+                            if ($theParentVariable) {
+                                $find_children_of = $theParentVariable;
+                            } else {
+                                $find_children_of = get_the_ID();
+                            }
+
+                            wp_list_pages(array(
+                                'title_li' => NULL,
+                                'child_of' => $find_children_of
+                            ));
+                            ?>
+                </ul>
+            </div>
+        <?php } ?>
         <div class="generic-content">
             <?php the_content(); ?>
         </div>
